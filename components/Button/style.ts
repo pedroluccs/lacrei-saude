@@ -17,8 +17,8 @@ width: 325px;
 }
 
 @media (max-width: 1024px) {
-padding: 24px 100px;
-width: 500px;
+padding: 16px 100px;
+width: 400px;
 font-size: 1.5rem;
 }
 
