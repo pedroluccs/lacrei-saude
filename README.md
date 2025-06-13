@@ -88,3 +88,10 @@ npm test
 - **Acessibilidade:** Botões e componentes com textos claros e navegáveis, focando usabilidade para todos os usuários.
 - **Jest + React Testing Library:** Garantem que a interface funcione conforme esperado e facilitam manutenção futura.
 - **Desativação do Turbopack:** Para compatibilidade total com Styled Components e Babel, evitando perda de estilos no reload.
+
+---
+
+Deploy da Aplicação
+A aplicação foi deployada na plataforma Vercel. Você pode acessar a versão de produção da aplicação no link abaixo:
+
+https://lacrei-saude-three.vercel.app/
