@@ -9,7 +9,7 @@ Projeto web desenvolvido com Next.js, TypeScript e Styled Components para a da L
 
 1. Clone o repositório:
    
-   git clone https://github.com/pedroluccs/lacrei-saude.git
+   git clone https://github.com/pedroluccs/lacrei-saude
    cd lacrei-saude
    
 
