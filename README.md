@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Lacrei Saúde - Desafio Técnico
 
-First, run the development server:
+Projeto web desenvolvido com Next.js, TypeScript e Styled Components para a da Lacrei Saúde. O sistema é responsivo, acessível e conta com testes automatizados usando Jest e React Testing Library.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##  Rodando o projeto localmente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone o repositório:
+   
+   git clone https://github.com/pedroluccs/lacrei-saude.git
+   cd lacrei-saude
+   
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Instale as dependências:
+   
+   npm install
+   
 
-## Learn More
+3. Inicie o servidor de desenvolvimento:
+   
+   npm run dev
+   
 
-To learn more about Next.js, take a look at the following resources:
+4. Acesse o projeto no navegador:
+   
+   http://localhost:3000
+   
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠 Build e Deploy
 
-## Deploy on Vercel
+- Para criar o build de produção:
+  
+  npm run build
+  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Para rodar a aplicação em modo produção localmente:
+  
+  npm run start
+  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Deploy pode ser realizado facilmente em plataformas como **Vercel**, **Netlify** ou **Render**. Basta conectar o repositório e o processo de build será automático.
+
+---
+
+## ✅ Testes aplicados
+
+- Testes unitários e de renderização dos componentes principais:
+  - Botões (Button)
+  - Cabeçalho (Header)
+
+- Ferramentas usadas:
+  - Jest
+  - React Testing Library
+  - jest-dom para extensões de matchers
+
+Para rodar os testes:
+
+npm test
+
+
+---
+
+## 🔄 Rollback simples
+
+- Em plataformas de deploy (como Vercel):
+  - Acesse o histórico de deploys.
+  - Selecione uma versão anterior estável.
+  - Refaça o deploy para essa versão.
+
+- Em deploys manuais via Git:
+  - Faça checkout para a tag ou commit desejado:
+    
+    git checkout <tag-ou-hash>
+    
+  - Rode o processo de build e deploy normalmente.
+
+---
+
+##  Escolhas técnicas e visuais
+
+- **Next.js + TypeScript:** Fornecem estrutura moderna, desempenho e segurança via tipagem estática.
+- **Styled Components:** Permitem modularidade no CSS, com possibilidade de theming e isolamento de estilos.
+- **Responsividade:** Layouts adaptáveis para celulares, tablets e desktops usando media queries.
+- **Acessibilidade:** Botões e componentes com textos claros e navegáveis, focando usabilidade para todos os usuários.
+- **Jest + React Testing Library:** Garantem que a interface funcione conforme esperado e facilitam manutenção futura.
+- **Desativação do Turbopack:** Para compatibilidade total com Styled Components e Babel, evitando perda de estilos no reload.
