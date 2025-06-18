@@ -15,7 +15,7 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "baseUrl": ".",
     "types": [
       "jest",
@@ -28,8 +28,12 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-        "components/*": ["./components/*"]
+      "@/*": [
+        "./*"
+      ],
+      "components/*": [
+        "./components/*"
+      ]
     }
   },
   "include": [
