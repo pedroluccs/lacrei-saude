@@ -31,7 +31,7 @@ render() {
     return (
     <Html lang="pt-BR">
         <Head>
-          {/* Aqui podem entrar fontes, meta tags, etc */}
+        {<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;&display=swap" rel="stylesheet" />}
         </Head>
         <body>
         <Main />

@@ -1,13 +1,15 @@
-import { ButtonContainer, StyledButton } from "./style";
+import React from "react";
+import { StyledButton } from "./style";
 
 interface ButtonProps {
-    label: string;
+    children: React.ReactNode
+    ariaLabel: string;
     onClick: () => void;
 }
 
-export default function Button({ label, onClick }: ButtonProps) {
+export default function Button({ children, ariaLabel, onClick }: ButtonProps) {
     return (
-        <ButtonContainer>
-            <StyledButton onClick={onClick}>{label}</StyledButton>
-        </ButtonContainer>
+            <StyledButton onClick={onClick} aria-label={ariaLabel}>
+                {children}
+            </StyledButton>
 )}
